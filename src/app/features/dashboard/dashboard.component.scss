@@ -1,0 +1,10 @@
+h3{
+  color: var(--txt-dark);
+  font-size: 18px;
+}
+.container{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  overflow-y: auto;
+}
