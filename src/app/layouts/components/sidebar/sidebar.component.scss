@@ -1,0 +1,52 @@
+.container {
+  width: 231px;
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+  transform: translateX(-100%);
+  // display: none     how this = this??/;
+ position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  background-color: var(--white_bg);
+  .logo {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 183px;
+      height: 36px;
+      margin-left: 27px;
+    }
+  }
+  ul {
+    list-style: none;
+    height: 60%;
+    width: 173px;
+    li {
+      height: 42px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: var(--sidebar-txt);
+      gap: 25px;
+      &:hover {
+        color: var(--active-icon);
+      }
+    }
+  }
+}
+.sidebarOpen{
+    transform: translateX(0);
+   
+}
+@media (min-width: 767px) {
+  .container {
+    transform: translateX(0);
+    display: block;
+     position: relative;
+
+  }
+}

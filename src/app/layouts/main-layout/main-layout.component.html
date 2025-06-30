@@ -1,0 +1,11 @@
+<!-- ----------------- sidebar + navbar + main content---------- -->
+<div class="dashboard-wrapper">
+  <app-sidebar [isOpen]="isSidebarOpen"></app-sidebar>
+  <!-- ----------------- navbar + main content---------- -->
+  <div class="main-content">
+    <app-navbar (toggleSidebar)="onToggleSidebar()"></app-navbar>
+    <div class="page-container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

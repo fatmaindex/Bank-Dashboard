@@ -1,0 +1,111 @@
+@import "../../../../styles/colors.scss";
+
+.mobile-navbar {
+  background-color: var(--white_bg);
+  height: 110px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.title {
+  color: var(--txt-dark);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.searchBox,
+.searchBox2 {
+  width: 90%;
+  height: 20px;
+  background-color: var(--main_bg);
+  padding: 10px 20px;
+  display: flex;
+  gap: 5px;
+  border-radius: 40px;
+  .search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: var(--txt-light);
+  }
+  .search-input::placeholder {
+    color: var(--txt-light);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+// ------------desktop navbar----------
+.desktop-navbar {
+  background-color: var(--white_bg);
+  height: 85px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0px 25px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.right-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  width: 100%;
+}
+.searchBox2 {
+  width: 30%;
+}
+.nav-icons {
+  display: flex;
+  gap: 20px;
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main_bg);
+  }
+}
+@media (min-width: 767px) {
+  .desktop-navbar {
+    display: flex;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .avatar img {
+    width: 45px;
+    height: 45px;
+  }
+  .desktop-navbar {
+    display: flex;
+  }
+  .mobile-navbar {
+    display: none;
+  }
+}
