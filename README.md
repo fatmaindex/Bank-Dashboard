@@ -1,59 +1,47 @@
-# AngularDashboard
+Bank-Dashboard
+A modular Angular financial dashboard built with a Feature-Based Architecture and a centralized Design System to ensure scalability and visual consistency.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.2.
+🏗️ Architecture & Structure
+The project follows a modular pattern to maintain a clean separation of concerns:
 
-## Development server
+Core Module: Manages global singletons and structural layouts (Navbar/Sidebar).
 
-To start a local development server, run:
+Shared Module: Contains reusable UI components, ensuring a "DRY" (Don't Repeat Yourself) codebase.
 
-```bash
-ng serve
-```
+Feature Modules: Independent modules like dashboard that encapsulate specialized business logic.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🚀 Technical Implementation
+🎨 Design System & Styling (Theming)
+Centralized Style Guide: Implemented a robust CSS Variable System (:root) to manage the application's color palette (Primary, Secondary, Status Colors) and spacing globally.
 
-## Code scaffolding
+Sass Architecture: Utilized @use rules and external variables.scss for font-family management and modular styling, ensuring easy theme updates.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Component-Level Polish: * Product Cards: Smooth translateY hover effects with custom shadows.
 
-```bash
-ng generate component component-name
-```
+Interactive UI: Dynamic buttons with background transitions (transparent to solid).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📊 Advanced Data Visualization
+Balance History Chart: A smooth line chart utilizing linear gradients and dashed split-lines for financial trend analysis.
 
-```bash
-ng generate --help
-```
+Weekly Activity Chart: A dual-bar implementation comparing revenue and expenses with custom rounded UI.
 
-## Building
+Consistent Visualization: Charts are synced with the global variables (e.g., using --txt-light for labels) to maintain design harmony.
 
-To build the project run:
+📁 Project Structure
+Plaintext
+src/
+├── app/
+│   ├── core/         # Singleton services & layouts
+│   ├── shared/       # Reusable UI elements
+│   └── features/     # Feature-specific modules
+└── styles/
+    ├── variables.scss # Sass mixins and font configurations
+    └── styles.scss    # Global :root variables and base resets
+🛠️ Tech Stack
+Framework: Angular (Standalone: false)
 
-```bash
-ng build
-```
+Styling: SCSS (CSS Variables, Nesting, Mixins)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Charts: Apache ECharts (Custom Line/Bar configurations)
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Design: Figma-to-Code
