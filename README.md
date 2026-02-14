@@ -40,9 +40,8 @@ Consistent Visualization: Charts are synced with the global variables (e.g., usi
 
 Visual Accuracy: Applied custom gradients, rounded bar UI, and interactive tooltips to match design specifications.
 
---
 3. Styling & Responsive Design
---
+   
 Theming System: Used a :root CSS variable system for global color management and easy theme updates.
 
 Responsiveness: Built with a Mobile-First approach using Sass, Flexbox, and CSS Grid to ensure a seamless experience on all screen sizes.
