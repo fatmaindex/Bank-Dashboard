@@ -1,6 +1,11 @@
 Bank-Dashboard
 A modular Angular financial dashboard built with a Feature-Based Architecture and a centralized Design System to ensure scalability and visual consistency.
 
+
+🎯 Project Overview
+A financial management interface designed to handle complex data visualization and scalable code organization. This project focuses on translating Figma designs into a functional Angular application using modern development standards.
+
+
 🏗️ Architecture & Structure
 The project follows a modular pattern to maintain a clean separation of concerns:
 
@@ -27,21 +32,29 @@ Weekly Activity Chart: A dual-bar implementation comparing revenue and expenses 
 
 Consistent Visualization: Charts are synced with the global variables (e.g., using --txt-light for labels) to maintain design harmony.
 
-📁 Project Structure
-Plaintext
-src/
-├── app/
-│   ├── core/         # Singleton services & layouts
-│   ├── shared/       # Reusable UI elements
-│   └── features/     # Feature-specific modules
-└── styles/
-    ├── variables.scss # Sass mixins and font configurations
-    └── styles.scss    # Global :root variables and base resets
-🛠️ Tech Stack
-Framework: Angular (Standalone: false)
+Visual Accuracy: Applied custom gradients, rounded bar UI, and interactive tooltips to match design specifications.
+
+3. Styling & Responsive Design
+Theming System: Used a :root CSS variable system for global color management and easy theme updates.
+
+Responsiveness: Built with a Mobile-First approach using Sass, Flexbox, and CSS Grid to ensure a seamless experience on all screen sizes.
+
+Component Polish: Interactive elements like product cards feature smooth CSS transitions and hover states.
+
+4. Technical Stack
+Framework: Angular
 
 Styling: SCSS (CSS Variables, Nesting, Mixins)
 
-Charts: Apache ECharts (Custom Line/Bar configurations)
+UI Components: Angular Material
 
-Design: Figma-to-Code
+Charts: Apache ECharts
+
+🚀 Installation & Setup
+Clone the repository: git clone [your-repo-link]
+
+Install dependencies: npm install
+
+Run the project: ng serve
+
+Open http://localhost:4200/ in your browser.
